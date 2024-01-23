@@ -1,0 +1,16 @@
+Result
+
+Evaluation metric :- F1 Score
+
+Reason to choose F1 score
+
+The F1 score is a measure of the balance between precision and recall. It is
+calculated as the harmonic mean of precision and recall. A high F1 score
+indicates that the recommendation system is providing both relevant and
+accurate recommendations. 
+
+So our Models Average precision was equal to 87.5% and the Average Recall was 85%
+
+F1 Score = 2 * (Precision * Recall) / (Precision + Recall)
+F1 Score = 2 * (0.875 * 0.85) / (0.875 + 0.85)
+F1 Score = 0.8629 or 86.29%
