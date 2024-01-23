@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Popular Dog Breeds Recommender</title>
+</head>
+<body>
+	<h1>Popular Dog Breeds Recommender</h1>
+	<form action="/recommend_dogs" method="POST">
+		<label for="breed">Breed:</label>
+		<input type="text" id="breed" name="breed"><br><br>
+
+		<label for="group">Group:</label>
+		<select id="group" name="group">
+			<option value="">Select a group</option>
+			<option value="Herding">Herding</option>
+			<option value="Hound">Hound</option>
+			<option value="Non-Sporting">Non-Sporting</option>
+			<option value="Sporting">Sporting</option>
+			<option value="Terrier">Terrier</option>
+			<option value="Toy">Toy</option>
+			<option value="Working">Working</option>
+		</select><br><br>
+
+		<label for="low-energy">Low Energy:</label>
+		<input type="checkbox" id="low-energy" name="low[]" value="energy"><br>
+
+		<label for="low-grooming">Low Grooming:</label>
+		<input type="checkbox" id="low-grooming" name="low[]" value="grooming"><br>
+
+		<label for="medium-training">Medium Training:</label>
+		<input type="checkbox" id="medium-training" name="medium[]" value="training"><br>
+
+		<label for="medium-shedding">Medium Shedding:</label>
+		<input type="checkbox" id="medium-shedding" name="medium[]" value="shedding"><br>
+
+		<label for="high-barking">High Barking:</label>
+		<input type="checkbox" id="high-barking" name="high[]" value="barking"><br>
+
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>

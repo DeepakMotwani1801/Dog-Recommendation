@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Results</title>
+</head>
+<body>
+	<h1>Results</h1>
+	{% if breed %}
+		<h3>Breed: {{ breed }}</h3>
+	{% endif %}
+	{% if group %}
+		<h3>Group: {{ group }}</h3>
+	{% endif %}
+	{% if low %}
+		<h3>Low Energy and/or Low Grooming</h3>
+	{% endif %}
+	{% if medium %}
+		<h3>Medium Training and/or Medium Shedding</h3>
+	{% endif %}
+	{% if high %}
+		<h3>High Barking</h3>
+	{% endif %}
+	{% if recommendations %}
+		<h3>Recommended Dog Breeds:</h3>
+		<ul>
+			{% for breed in recommendations %}
+				<li>{{ breed }}</li>
+			{% endfor %}
+		</ul>
+	{% else %}
+		<p>No dog breeds match your criteria.</p>
+	{% endif %}
+</body>
+</html>
